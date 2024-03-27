@@ -119,6 +119,9 @@ main .button button {
 .sect2 img {
   width: 100%;
 }
+.dispNone {
+  display: none;
+}
 /* -------------tablet fine------------------- */
 
 @media screen and (min-width: 270px) and (max-width: 500px) {
@@ -212,11 +215,55 @@ main .button button {
     top: -15px;
     right: 10px;
   }
- main h2{
+  main h2 {
     justify-content: space-between;
     padding: 0 60px 0 30px;
     text-align: center;
- }
+  }
+}
+@media screen and (min-width: 1010px) {
+  .sect2 img {
+    display: block;
+  }
+  main .container-card:last-of-type {
+    display: block;
+  }
+  div.container-card {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .dispNone {
+    display: block;
+  }
+  div.container-card {
+    width: 19%;
+  }
+  .sect2 {
+    display: flex;
+    
+  }
+  .sect2 div {
+    width: 49%;
 
- 
+  }
+  .sect2 p{
+    font-size: 1.5rem;
+  }
+  .sect2 img {
+    width: 100%;
+  }
+  header nav{
+    justify-content: start;
+    gap: 20px;
+  }
+  header .shop{
+    padding: 30px 15px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1800px) {
+    .sect2 p{
+        font-size: 1.7rem;
+      }
 }
