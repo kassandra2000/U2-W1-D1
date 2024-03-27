@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+}
+header nav {
+  background-color: rgb(254, 255, 202);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+}
+header h3 {
+  background-color: rgb(230, 230, 107);
+  padding: 3vh 2vw;
+  border-radius: 30px;
+  color: rgb(129, 37, 0);
+  font-weight: 550;
+  font-size: 1.3em;
+}
+header .shop {
+  font-size: 2em;
+  padding: 5vh 2vw;
+  border-radius: 37%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .shop img {
+  margin-right: 20px;
+}
+
+header img {
+  width: 50px;
+}
+main {
+  padding: 20px;
+}
+main h1 {
+  color: rgb(129, 37, 0);
+  font-size: 3em;
+  font-weight: 800;
+  margin: 20px 0;
+}
+main section.card {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .container-card {
+  background-color: rgb(254, 255, 202);
+  border-radius: 40px;
+  width: 48%;
+  flex-direction: column;
+  margin: 10px 0;
+}
+main .container-card img {
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+main h2,
+main p,
+main span,
+main button,
+h3 {
+  color: rgb(129, 37, 0);
+}
+main h2 {
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+h2 span {
+  width: 80px;
+}
+main .p {
+  display: flex;
+  justify-content: space-around;
+}
+main .button {
+  display: flex;
+  justify-content: center;
+}
+main .button button {
+  border: none;
+  font-family: inherit;
+  background-color: rgb(230, 230, 107);
+  padding: 7px 50px;
+  font-weight: 700;
+  border-radius: 20px;
+  margin: 20px;
+}
+.h1 {
+  font-size: 2.2em;
+}
+.sect2 {
+  background-color: rgb(254, 255, 202);
+  padding: 20px;
+  border-radius: 30px;
+}
+.sect2 h3 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.sect2 p {
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: rgb(139, 40, 0);
+  font-size: 1.2em;
+}
+.sect2 img {
+  width: 100%;
+}
+/* -------------tablet fine------------------- */
+
+@media screen and (min-width: 270px) and (max-width: 500px) {
+  header nav {
+    flex-wrap: wrap;
+    height: 400px;
+    border-radius: 30%;
+    margin: 25px;
+  }
+  header nav h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 30px 0;
+    position: relative;
+    top: -10px;
+    padding-bottom: 20px;
+  }
+  header .shop {
+    top: 10px;
+    order: -1;
+    width: 75%;
+    border-radius: 80px;
+    padding: 30px 0;
+  }
+  main h1 {
+    text-align: center;
+  }
+  div.container-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+  }
+  header {
+    position: relative;
+  }
+  header nav {
+    flex-direction: column;
+    height: 100vh;
+    width: 220px;
+    position: sticky;
+    top: 0;
+  }
+  header .shop {
+    order: -1;
+    border-radius: 50px;
+    font-weight: 550;
+    width: 170px;
+    height: 45px;
+  }
+  header nav h3 {
+    width: 200px;
+    height: 90px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  header img {
+    width: 60px;
+  }
+
+  main .container-card {
+    width: 30%;
+  }
+  main .container-card:last-of-type {
+    display: none;
+  }
+  .sect2 {
+    padding: 40px;
+    margin-bottom: 0;
+  }
+  .sect2 h3 {
+    font-size: 1.5em;
+  }
+  .sect2 img {
+    display: none;
+  }
+  div.p {
+    position: relative;
+  }
+  main span {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+  }
+ main h2{
+    justify-content: space-between;
+    padding-left: 20px;
+ }
+}
